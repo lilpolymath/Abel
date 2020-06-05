@@ -2,7 +2,10 @@
 
 describe('First steps', () => {
   it('checks if the website is accessible', () => {
-    cy.visit('/');
+    beforeEach(() => {
+      cy.visit('/');
+      //   cy.viewport('samsung-s10');
+    });
   });
 });
 
@@ -20,5 +23,53 @@ describe('Checks header', () => {
     cy.get('a')
       .contains('Abel')
       .and('have.attr', 'href');
+  });
+});
+
+describe('Homepage', () => {
+  it('should load', () => {
+    cy.visit('/');
+  });
+
+  it('should have - two sign-in button', () => {
+    cy.get('a').should('contain', 'Sign in');
+  });
+
+  it('should have - two create account button', () => {
+    cy.get('a').should('contain', 'Create an account');
+  });
+
+  it('should have - forgot password button', () => {
+    cy.get('a').should('contain', 'Forgot Password?');
+  });
+});
+
+describe('About page', () => {
+  it('should load', () => {
+    cy.visit('/about');
+  });
+});
+
+describe('Contact Us page', () => {
+  it('should load', () => {
+    cy.visit('/contact-us');
+  });
+});
+
+describe('Feedback page', () => {
+  it('should load', () => {
+    cy.visit('/feedback');
+  });
+});
+
+describe('Sigin page', () => {
+  it('should load', () => {
+    cy.visit('/sign-in');
+  });
+});
+
+describe('Create Account page', () => {
+  it('should load', () => {
+    cy.visit('/create-an-account');
   });
 });
