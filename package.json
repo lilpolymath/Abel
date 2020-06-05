@@ -1,0 +1,19 @@
+{
+  "name": "cypresstest",
+  "version": "1.0.0",
+  "description": "learning how to use cypress for testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "keywords": [
+    "cypress",
+    "e2e",
+    "testing"
+  ],
+  "author": "Ayobami Adedapo",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^4.7.0"
+  }
+}
