@@ -4,7 +4,8 @@
   "description": "learning how to use cypress for testing",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "test": "npm test",
+    "e2e": "cypress open"
   },
   "keywords": [
     "cypress",

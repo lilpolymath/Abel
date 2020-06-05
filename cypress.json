@@ -1,3 +1,4 @@
 {
-  "baseUrl": "https://abel-staging.mykeels.com/"
+  "baseUrl": "https://abel-staging.mykeels.com/",
+  "chromeWebSecurity": false
 }
